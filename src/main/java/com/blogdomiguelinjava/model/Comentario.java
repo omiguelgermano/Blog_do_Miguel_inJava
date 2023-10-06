@@ -32,7 +32,7 @@ public class Comentario {
     //idPost
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "idComentario")
+    @JoinColumn(name = "idComentarioList")
     private Comentario comentario;
 
     @ManyToOne
