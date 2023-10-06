@@ -30,4 +30,12 @@ public class Comentario {
 
     //idAutor
     //idPost
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "idComentario")
+    private Comentario comentario;
+
+    @ManyToOne
+    @JoinColumn(name = "idUsuario")
+    private Usuario usuario;
 }

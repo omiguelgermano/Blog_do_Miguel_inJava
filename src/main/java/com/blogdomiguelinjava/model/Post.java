@@ -32,5 +32,8 @@ public class Post {
     private Date dataDeCriacao;
 
     //Id autor
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "idUsuario")
+    private Usuario usuario;
 
 }
