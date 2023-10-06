@@ -26,7 +26,7 @@ public class Post {
     private String conteudo;
 
     @Column
-    private Date email;
+    private Date dataDeCriacao;
 
     //Id autor
 
