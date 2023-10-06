@@ -18,8 +18,11 @@ public class Comentario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idComentario;
 
-    @Lob
-    @Column(nullable = false)
+//    @Lob
+//    @Column(nullable = false)
+//    private String texto;
+
+    @Column(columnDefinition = "TEXT")
     private String texto;
 
     @Column

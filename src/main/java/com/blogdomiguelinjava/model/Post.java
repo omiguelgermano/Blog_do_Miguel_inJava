@@ -21,8 +21,11 @@ public class Post {
     @Column(nullable = false, length = 255)
     private String titulo;
 
-    @Lob
-    @Column(nullable = false)
+    //    @Lob
+    //    @Column(nullable = false)
+    //    private String conteudo;
+
+    @Column(columnDefinition = "TEXT")
     private String conteudo;
 
     @Column
